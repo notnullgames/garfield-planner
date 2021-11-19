@@ -11,11 +11,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Setup Node
-        uses: actions/setup-node@v2-beta
-        with:
-          node-version: 16
-
       - name: Setup Python
         uses: actions/setup-python@v2
         with:
@@ -27,7 +22,7 @@ jobs:
       - name: Build App
         run: make web
 
-      - name: Deploy to foo-bar.surge.sh
+      - name: Deploy to garfield-organizer.surge.sh
         uses: dswistowski/surge-sh-action@v1
         with:
           domain: 'garfield-organizer.surge.sh'
