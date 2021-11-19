@@ -19,7 +19,7 @@ win                            Build for Windows
 deploy                         Deploy to https://garfield-organizer.surge.sh
 ```
 
-so to biuld for web:
+so to build for web (in `build/web`):
 
 ```
 make web
