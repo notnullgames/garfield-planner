@@ -27,5 +27,10 @@ jobs:
       - name: Build App
         run: make web
 
-      - name: Deploy to Surge
-        run:  npx surge build/web garfield-organizer.surge.sh
+      - name: Deploy to foo-bar.surge.sh
+        uses: dswistowski/surge-sh-action@v1
+        with:
+          domain: 'garfield-organizer.surge.sh'
+          project: 'build/web'
+          login: ${{ secrets.SURGE_LOGIN }}
+          token: ${{ secrets.SURGE_TOKEN }}
