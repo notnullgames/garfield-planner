@@ -2,6 +2,8 @@
 
 Helping Belle with her Garfield-themed planner for switch
 
+You can see a basic demo [here](https://garfield-organizer.surge.sh), but eventuially it will run on windows, mac, linux, switch, ios , and android.
+
 
 ## usage
 
