@@ -28,4 +28,4 @@ jobs:
         run: make web
 
       - name: Deploy to Surge
-        run:  npx surge --token ${{secrets.TOKEN}} build/web garfield-organizer.surge.sh
+        run:  npx surge build/web garfield-organizer.surge.sh
